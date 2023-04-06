@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --bs-body-font-family:'Roboto Condensed', sans-serif 
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav {
+    backdrop-filter: blur(0.5rem);
+}
+.active:before {
+    content: "→ ";
+}
+
+@media (min-width: 992px) {
+    .active:before {
+        content: "↓ ";
+    }
+}
+
+#fondito{
+    background: blue url('https://picsum.photos/id/29/1500/880') no-repeat left top;
+    background-size:cover;
+}
